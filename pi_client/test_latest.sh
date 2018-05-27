@@ -1,4 +1,4 @@
-#!/usr/bin/env bash
+echo removing all the .py files
 rm *.py
 echo *** getting lastest from master ****
 echo pi_accelerometer_IOT_client_test.py
