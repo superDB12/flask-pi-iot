@@ -25,6 +25,12 @@ def get_ServerList():
     ServerList = ('https://megan-pi-iot.cfapps.io/index.html', 'https://katie-pi-iot.cfapps.io/index.html', 'https://david-pi-iot.cfapps.io/index.html', 'https://jpf-pi-iot.cfapps.io/index.html', 'https://shane-pi-iot.cfapps.io/index.html')
     return ServerList
 
+def test_servers():
+    sl = get_ServerList()
+    for server in sl:
+        print('server name: ' + server)
+        r = requests.get(server)
+
 if __name__ == '__main__':
     while True:
         x,y,z=accel.read()
