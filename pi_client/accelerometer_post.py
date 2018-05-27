@@ -36,8 +36,6 @@ def get_valid_servers():
             print('removed {0}' .format(server))
             sl.remove(server)
 
-
-
     return(sl)
 
 if __name__ == '__main__':
