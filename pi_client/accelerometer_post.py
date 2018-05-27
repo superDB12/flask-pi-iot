@@ -22,15 +22,20 @@ def getserial():
     return cpuserial
 
 def get_ServerList():
-    ServerList = ('http://megan-pi-iot.cfapps.io/index.html', 'http://katie-pi-iot.cfapps.io/index.html', 'http://david-pi-iot.cfapps.io/index.html', 'http://flask-pi-iot.cfapps.io/index.html', 'http://shane-pi-iot.cfapps.io/index.html')
+    ServerList = ('http://megan-pi-iot.cfapps.io/index.html', 'http://katie-pi-iot.cfapps.io/index.html', 'http://david-pi-iot.cfapps.io/index.html', 'http://jpf-flask-pi-iot.cfapps.io/index.html', 'http://shane-pi-iot.cfapps.io/index.html')
     return ServerList
 
-def test_servers():
+def filter_invalid_servers():
     sl = get_ServerList()
     for server in sl:
         print('server name: ' + server)
         r = requests.get(server)
         print('status return: {0}'.format(r.status_code))
+
+        if r.status_code != 200
+            sl.remove(server)
+
+    return(sl)
 
 if __name__ == '__main__':
     while True:
