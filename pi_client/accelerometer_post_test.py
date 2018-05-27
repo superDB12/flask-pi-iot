@@ -17,4 +17,4 @@ class test_accelerometer_post(unittest.TestCase):
 
 
 if __name__ == '__main__':
-unittest.main()
+    unittest.main()
