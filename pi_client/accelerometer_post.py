@@ -33,7 +33,9 @@ def get_valid_servers():
         print('status return: {0}'.format(r.status_code))
 
         if r.status_code != 200:
+            print('removed {0}' .format(server))
             sl.remove(server)
+
 
     return(sl)
 
