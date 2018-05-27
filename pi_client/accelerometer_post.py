@@ -25,7 +25,7 @@ def get_ServerList():
     ServerList = ('http://megan-pi-iot.cfapps.io/index.html', 'http://katie-pi-iot.cfapps.io/index.html', 'http://david-pi-iot.cfapps.io/index.html', 'http://jpf-flask-pi-iot.cfapps.io/index.html', 'http://shane-pi-iot.cfapps.io/index.html')
     return ServerList
 
-def filter_invalid_servers():
+def get_valid_servers():
     sl = get_ServerList()
     for server in sl:
         print('server name: ' + server)
