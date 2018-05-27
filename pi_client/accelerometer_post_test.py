@@ -10,8 +10,8 @@ class test_accelerometer_post(unittest.TestCase):
         return
 
     #test the host name list
-    def test_getServerList(self):
-        l = ap.getServerList()
+    def test_get_ServerList(self):
+        l = ap.get_ServerList()
         self.assertTrue(len(l)>0)
 
 
