@@ -32,7 +32,7 @@ def get_valid_servers():
         r = requests.get(server)
         print('status return: {0}'.format(r.status_code))
 
-        if r.status_code != 200
+        if r.status_code != 200:
             sl.remove(server)
 
     return(sl)
