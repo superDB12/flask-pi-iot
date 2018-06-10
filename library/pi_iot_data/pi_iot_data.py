@@ -1,7 +1,7 @@
 #A class to store data from the acccelerometer
 
 
-class pi_iot_data():
+class piIotData():
 
 
     def __init__(self):
