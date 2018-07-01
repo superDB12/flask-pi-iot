@@ -1,24 +1,5 @@
-<!doctype html>
-<html>
-<head>
-<meta charset="utf-8">
-<title>KatiePi</title>
-<!--<link href="piled.css" rel="stylesheet" type="text/css">-->
-<link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='styles/piled.css') }}">
-</head>
-
-<body>
-	
-<page class="wrapper">	
-<header class="header">KatiePi Accelerometer Data
-<ul class="navigation">
-		<li><a href="index.html">Home</a></li>
-		<li><a href="meganpi.html">Megan</a></li>
-		<li><a href="johnpi.html">John</a></li>
-		<li><a href="katiepi.html">Katie</a></li>
-		<li><a href="davidpi.html">David</a></li>
-</ul>
-</header>
+{% extends "base.html" %}
+	{% block content %}
 
 <main-content class="main">
 	<p>
@@ -27,9 +8,4 @@
 
 </main-content>
 	
-	
-<footer class="footer">Footer</footer>
-</page>
-	
-</body>
-</html>
+{% endblock %}

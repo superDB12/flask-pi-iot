@@ -64,8 +64,10 @@ def david_page():
     return render_template('davidpi.html')
 
 @app.route('/alldata.html',methods=['POST','GET'])
-def david_page():
+def alldata_page():
     if request.method == 'POST':
-        print("All Data got a post")
-        print(request.form)
-    return render_template('alldata.html')
+        pass
+    print("All Data got a GET")
+    d=data.get_readings()
+    print(d)
+    return render_template('alldata.html', data = d)
