@@ -6,7 +6,6 @@ import datetime
 
 accel = Adafruit_ADXL345.ADXL345()
 
-
 def getserial():
     # Extract serial from cpuinfo file
     cpuserial = "0000000000000000"
